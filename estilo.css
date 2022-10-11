@@ -1,0 +1,50 @@
+:root{
+    --areaFondo:#fff;
+	--areaGris:#efeded;
+    --areaAzul:#eee;
+    --bordeArea: #ccc;
+    --texto:#000;
+    --titulo: font-size:3rem;
+    --subtitulo: font-size:1.5rem;
+    --tituloCampo:font-size:1.2rem;
+    --fuente:Roboto;
+ 
+	}
+	
+
+* {
+ padding:0px;
+ margin:0px;
+ box-sizing:0px;
+ }
+ 
+ 
+
+ .envolvente{
+    background-color:var(--areaGris);
+    border-radius: 10px;
+    border:solid 1px var(--bordeArea);
+    padding: 1.5em;
+    margin: auto;
+    margin-top: 1em;
+    width: 90%;
+    color:var(--texto);
+    font-family:var(--fuente);
+}
+
+.textarea{
+    background-color: var(--areaFondo);
+    border-radius: 10px;
+    display:inline-block;
+    padding:1em;
+}
+
+body{
+	font-family: var(--fuente);
+	background-color: var(--areaFondo);
+	}
+
+h1{text-align: center;}
+h2{}
+
+p{padding: 0 1em 1em 0;}
