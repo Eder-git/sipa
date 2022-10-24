@@ -1,12 +1,21 @@
 :root{
-    --areaFondo:#fff;
-	--areaGris:#efeded;
-    --areaAzul:#eee;
-    --bordeArea: #ccc;
+    --fondo:#e5eff8;
+    --fondoImportante:#ff7b7b;
+	--grisSeccion:#ebe9ea;
+    --grisTitSeccion:#d5d5d5;
+    --bordeSeccion: #ccc;
+    --blanco:#fff;
     --texto:#000;
+    --azulTit:#004179;
+    --grisTexto:#666666;
+    --azulBoton:#00589c;
+    --azulTexto:#006699;
+    --textoEditando:#3a9ae4;
+
     --titulo: font-size:3rem;
     --subtitulo: font-size:1.5rem;
     --tituloCampo:font-size:1.2rem;
+
     --fuente:Roboto;
  
 	}
@@ -20,20 +29,21 @@
  
  
 
- .envolvente{
-    background-color:var(--areaGris);
+ .areaSeccion{
+    background-color:var(--grisSeccion);
     border-radius: 10px;
-    border:solid 1px var(--bordeArea);
+    border:solid 1px var(--bordeSeccion);
     padding: 1.5em;
     margin: auto;
     margin-top: 1em;
     width: 90%;
     color:var(--texto);
     font-family:var(--fuente);
+    box-shadow: 3px 3px 3px var(--bordeSeccion);
 }
 
 .textarea{
-    background-color: var(--areaFondo);
+    background-color: var(--blanco);
     border-radius: 10px;
     display:inline-block;
     padding:1em;
@@ -41,7 +51,7 @@
 
 body{
 	font-family: var(--fuente);
-	background-color: var(--areaFondo);
+	background-color: var(--fondo);
 	}
 
 h1{text-align: center;}
