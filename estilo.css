@@ -1,60 +1,290 @@
-:root{
-    --fondo:#e5eff8;
-    --fondoImportante:#ff7b7b;
-	--grisSeccion:#ebe9ea;
-    --grisTitSeccion:#d5d5d5;
+/* Fuentes
+
+
+
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+    src: local('Roboto Regular'), url("fonts/roboto-regular-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: normal;
+
+    src: local('Roboto Bold'), url("fonts/roboto-bold-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    font-style: normal;
+    font-weight: normal;
+   
+    src: local('Roboto Light'), url("fonts/roboto-light-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: normal;
+  
+    src: local('Roboto Medium'), url("fonts/roboto-medium-webfont.woff") format('woff');
+}
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+
+:root {
+    --fondo: #e5eff8;
+    --fondoImportante: #ff7b7b;
+    --grisSeccion: #ebe9ea;
+    --grisTitSeccion: #d5d5d5;
     --bordeSeccion: #ccc;
-    --blanco:#fff;
-    --texto:#000;
-    --azulTit:#004179;
-    --grisTexto:#666666;
-    --azulBoton:#00589c;
-    --azulTexto:#006699;
-    --textoEditando:#3a9ae4;
+    --blanco: #fff;
+    --texto: #000;
+    --azulTit: #004179;
+    --grisTexto: #666666;
+    --azulBoton: #00589c;
+    --azulTexto: #006699;
+    --textoEditando: #3a9ae4;
+    --piePortada: #004179;
+    --Campos: #181A1C;
 
-    --titulo: font-size:3rem;
-    --subtitulo: font-size:1.5rem;
-    --tituloCampo:font-size:1.2rem;
+    --titulo: 3rem;
+    --subtitulo: 1.563em;
+    --tituloCampo: 1.125em;
+    --tituloLogin: 1.875em;
 
-    --fuente:Roboto;
- 
-	}
-	
+    --fuente: 'Roboto', sans-serif;
+    
+
+}
 
 * {
- padding:0px;
- margin:0px;
- box-sizing:0px;
- }
- 
- 
-
- .areaSeccion{
-    background-color:var(--grisSeccion);
-    border-radius: 10px;
-    border:solid 1px var(--bordeSeccion);
-    padding: 1.5em;
-    margin: auto;
-    margin-top: 1em;
-    width: 90%;
-    color:var(--texto);
-    font-family:var(--fuente);
-    box-shadow: 3px 3px 3px var(--bordeSeccion);
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
 }
 
-.textarea{
+body {
+    font-size: 16px;
+    text-rendering: auto;
+    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+/* PORTADA */
+.contenedor-portada {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    height: 100vh;
+    justify-content: space-around;
+    flex: 1;
+
+}
+
+.portada-imgs {
+    height: 100vh;
+    position: relative;
+    background-image: url("img/bg-portada.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.portada-imgs img:first-child {
+    width: 250px;
+    align-self: flex-start;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.portada-imgs img:nth-child(2n) {
+    /* width: 50%; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 50%;
+    margin: auto;
+}
+.pie-portada {
+    background-color: var(--piePortada);
+    color: var(--blanco);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.pie-portada ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pie-portada ul li {
+    list-style: none;
+}
+
+.pie-portada p {
+    flex-basis: 60%;
+    padding: 0;
+}
+
+.contenedor-registro {
+    /* width: 50%; */
+    flex: 1;
+}
+.login-html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	margin: auto;
+	max-width: 80%;
+}
+.login-html h2 {
+    margin-bottom: 60px;
+    align-self: flex-start;
+    color: var(--Campos);
+    font-size: var(--tituloLogin);
+}
+
+.login-html .group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-html input {
+	height: 50px;
+	border: 1px solid #BFBFBF;
+	border-radius: 13px;
+	margin: 10px 0 30px;
+	padding: 0 30px;
+}
+
+.sign-in-htm .group:nth-child(3) input {
+    background-color: #00589C;
+    color: var(--blanco);
+    border-radius: 30px;
+    border: none;
+    font-size: 1.3em;
+}
+
+.sign-in-htm .group:nth-child(5) input {
+	background-color: #004179;
+	color: var(--blanco);
+	border-radius: 30px;
+	border: none;
+	width: 300px;
+	margin: 13px auto;
+	max-width: 80%;
+}
+
+hr {
+    border: 1px solid var(--grisTitSeccion);
+    margin: 40px 0;
+}
+
+.login-form {
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.areaSeccion {
+    background-color: var(--grisSeccion);
+    border-radius: 10px;
+    border: solid 1px var(--bordeSeccion);
+    padding: 1.5em;
+    margin: 1em auto auto;
+    width: 90%;
+    color: var(--textoColor);
+    font-family: var(--fuente);
+    box-shadow: 3px 3px 3px var(--bordeSeccion);
+    font-size: var(--texto);
+}
+
+.areaSeccionBlanca {
     background-color: var(--blanco);
     border-radius: 10px;
-    display:inline-block;
-    padding:1em;
+    border: solid 1px var(--bordeSeccion);
+    padding: 1em;
+    margin: 1em auto auto;
+    color: var(--textoColor);
+    font-family: var(--fuente);
+
 }
 
-body{
-	font-family: var(--fuente);
-	background-color: var(--fondo);
-	}
+.textarea {
+    background-color: var(--blanco);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1em;
+}
 
-h1{text-align: center;}
-h2{}
+body {
+    font-family: var(--fuente);
+    background-color: var(--fondo);
+}
 
-p{padding: 0 1em 1em 0;}
+h1 {
+    text-align: center;
+    color: var(--azulTit);
+    font-size: var(--titulo);
+    color: var(--Campos);
+}
+
+h2 {
+    font-size: var(--subtitulo);
+    font-family: var(--fuente);
+    color: var(--Campos);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--tituloCampo);
+    font-family: var(--fuente);
+    color: var(--Campos);
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 700;
+    color: var(--textoColor);
+    color: var(--Campos);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0.2em 0 0.6em;
+}
