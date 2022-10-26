@@ -47,7 +47,7 @@
     --bordeSeccion: #ccc;
     --blanco: #fff;
     --texto: #000;
-    --azulTit: #004179;
+    --azulTit: #045190;
     --grisTexto: #666666;
     --azulBoton: #00589c;
     --azulTexto: #006699;
@@ -55,7 +55,7 @@
     --piePortada: #004179;
     --Campos: #181A1C;
 
-    --titulo: 3rem;
+    --titulo: 1.875em;
     --subtitulo: 1.563em;
     --tituloCampo: 1.125em;
     --tituloLogin: 1.875em;
@@ -210,6 +210,12 @@ hr {
     width: 100%;
 }
 
+.contenedor-principal {
+	max-width: 1200px;
+	margin: auto;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -219,13 +225,13 @@ hr {
 .areaSeccion {
     background-color: var(--grisSeccion);
     border-radius: 10px;
-    border: solid 1px var(--bordeSeccion);
     padding: 1.5em;
-    margin: 1em auto auto;
+    margin: 2em auto auto;
     width: 90%;
     color: var(--textoColor);
     font-family: var(--fuente);
-    box-shadow: 3px 3px 3px var(--bordeSeccion);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     font-size: var(--texto);
 }
 
@@ -253,10 +259,10 @@ body {
 }
 
 h1 {
-    text-align: center;
-    color: var(--azulTit);
-    font-size: var(--titulo);
-    color: var(--Campos);
+	text-align: center;
+	color: var(--azulTit);
+	font-size: var(--titulo);
+	margin: 30px;
 }
 
 h2 {
