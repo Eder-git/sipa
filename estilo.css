@@ -254,10 +254,11 @@ hr {
 
 .caja__titulo{
     background-color: var(--gris-tit-seccion);
-    color: var(--texto);
+    color: var(--azul-tit);
     font-size: var(--titulo-campo);
-    padding: 3px;
+    padding: 5px;
     margin: 0;
+    text-align: center;
 }
 
 .caja__contenido {
@@ -270,13 +271,12 @@ hr {
     
 }
 
-.caja__contenido tabla{
-    padding: var(--borde-caja);
-}
+.caja__contenido table th{
+    
+   }
 
-.caja__contenido tabla td {
-
-    border-bottom:solid 1px color:var(--gris-texto);
+.caja__contenido table tr {
+    border-bottom:solid 1px var(--gris-texto);
 }
 
 .areaSeccionBlanca {
