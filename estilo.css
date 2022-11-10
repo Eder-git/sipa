@@ -42,26 +42,28 @@
 :root {
     --fondo: #e5eff8;
     --fondoImportante: #ff7b7b;
-    --grisSeccion: #ebe9ea;
-    --grisTitSeccion: #d5d5d5;
-    --bordeSeccion: #ccc;
+    --gris-seccion: #ebe9ea;
+    --gris-tit-seccion: #d5d5d5;
+    --borde-seccion: #ccc;
     --blanco: #fff;
     --texto: #000;
-    --azulTit: #045190;
-    --grisTexto: #666666;
-    --azulBoton: #00589c;
-    --azulTexto: #006699;
-    --textoEditando: #3a9ae4;
-    --piePortada: #004179;
-    --Campos: #181A1C;
+    --azul-tit: #045190;
+    --gris-texto: #666666;
+    --azul-boton: #00589c;
+    --azul-texto: #006699;
+    --texto-editando: #3a9ae4;
+    --pie-portada: #004179;
+    --campos: #181A1C;
 
     --titulo: 1.875em;
     --subtitulo: 1.563em;
-    --tituloCampo: 1.125em;
-    --tituloLogin: 1.875em;
+    --titulo-campo: 1.125em;
+    --titulo-login: 1.875em;
 
     --fuente: 'Roboto', sans-serif;
-    
+
+    --borde-caja:1em;
+     
 
 }
 
@@ -203,7 +205,7 @@ body {
 }
 
 hr {
-    border: 1px solid var(--grisTitSeccion);
+    border: 1px solid var(--gris-tit-seccionTitSeccion);
     margin: 40px 0;
 }
 
@@ -231,26 +233,59 @@ hr {
     padding: 0 30px;
 }
 
-.areaSeccion {
-    background-color: var(--grisSeccion);
+.bloque {
+    background-color: var(--gris-seccion);
     border-radius: 10px;
     padding: 1.5em;
     margin: 2em auto auto;
     width: 90%;
-    color: var(--textoColor);
+    color: var(--texto-color);
     font-family: var(--fuente);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     font-size: var(--texto);
 }
 
+.caja{
+   
+    
+}
+
+
+.caja__titulo{
+    background-color: var(--gris-tit-seccion);
+    color: var(--texto);
+    font-size: var(--titulo-campo);
+    padding: 3px;
+    margin: 0;
+}
+
+.caja__contenido {
+    background-color: var(--blanco);
+    border-radius: 0 0 25px 25px;
+    border: solid 1px var(--borde-seccion);
+    padding: var(--borde-caja);
+    color: var(--texto-color);
+    font-family: var(--fuente);
+    
+}
+
+.caja__contenido tabla{
+    padding: var(--borde-caja);
+}
+
+.caja__contenido tabla td {
+
+    border-bottom:solid 1px color:var(--gris-texto);
+}
+
 .areaSeccionBlanca {
     background-color: var(--blanco);
     border-radius: 10px;
-    border: solid 1px var(--bordeSeccion);
+    border: solid 1px var(--borde-seccion);
     padding: 1em;
     margin: 1em auto auto;
-    color: var(--textoColor);
+    color: var(--texto-color);
     font-family: var(--fuente);
 
 }
@@ -269,7 +304,7 @@ body {
 
 h1 {
 	text-align: center;
-	color: var(--azulTit);
+	color: var(--azul-tit);
 	font-size: var(--titulo);
 	margin: 30px;
 }
@@ -282,7 +317,7 @@ h2 {
 }
 
 h3 {
-    font-size: var(--tituloCampo);
+    font-size: var(--titulo-campo);
     font-family: var(--fuente);
     color: var(--Campos);
     font-weight: 500;
@@ -290,8 +325,8 @@ h3 {
 
 h4 {
     font-weight: 700;
-    color: var(--textoColor);
-    color: var(--Campos);
+    color: var(--texto-color);
+    color: var(--campos);
 }
 
 h1,
