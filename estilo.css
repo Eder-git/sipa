@@ -224,6 +224,15 @@ hr {
     box-sizing: 0;
 }
 
+/* clase muestra tipo componente*/
+.tipo__clase{ 
+margin-top: 1em;
+padding: 0;
+color:green;
+font-style: italic;}
+/*fin clase*/
+
+
 .textarea{
     height: 50px;
     border: 1px solid var(--borde-seccion);
@@ -264,27 +273,22 @@ hr {
     border: solid 1px var(--borde-seccion);
     padding: var(--borde-caja);
     color: var(--texto-color);
-    font-family: var(--fuente);
-    
+    font-family: var(--fuente);   }
+
+.tabla__listado{
+    width: 100%;}
+
+.tabla__listado th{
+    border-bottom:solid 1px var(--gris-tit-seccion);
 }
 
-.caja__contenido table{
-    width: 100%;
- 
-   }
-
-.caja__contenido table td{
+.tabla__listado td{
     border-bottom:solid 1px var(--gris-tit-seccion);
     padding: 4px;
     text-align: center;
-    width: 33%;
-  
-}
+    width: 33%;}
 
-
-.boton{       }
-
-button{
+ .tabla__listado td .boton{
        color: var(--blanco);
        border: 0;
        background: none;
@@ -297,7 +301,8 @@ button{
 
 
 
-.areaSeccionBlanca {
+
+.area__proyecto {
     background-color: var(--blanco);
     border-radius: 10px;
     border: solid 1px var(--borde-seccion);
