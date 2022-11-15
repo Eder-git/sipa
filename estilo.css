@@ -245,10 +245,7 @@ hr {
     font-size: var(--texto);
 }
 
-.caja{
-   
-    
-}
+.caja{}
 
 
 .caja__titulo{
@@ -280,23 +277,23 @@ hr {
     border-bottom:solid 1px var(--gris-tit-seccion);
     padding: 4px;
     text-align: center;
+    width: 33%;
   
 }
 
 
-.boton{
-    background-color: var(--azul-boton);
-	border-radius: 20px;
-	text-align:center;
-	width:110px;
-    padding: 3px;
-
-     }
+.boton{       }
 
 button{
-    width: 50px;
-    color: var(--blanco);
-}
+       color: var(--blanco);
+       border: 0;
+       background: none;
+       background-color: var(--azul-boton);
+       border-radius: 20px;
+       padding: 5px;
+       width: 110px;
+     
+     }
 
 
 
