@@ -260,15 +260,14 @@ font-style: italic;}
     font-size: var(--texto);
 }
 
-.bloque__2columnas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
+.bloque__2columnas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .bloque__2columnas .caja{
-        width: 50%;
+        width: 500px;
         padding: 15px;
 
 }
