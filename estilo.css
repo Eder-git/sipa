@@ -83,7 +83,7 @@ body {
 }
 
 /* PORTADA */
-.contenedor-portada {
+.contenedor__portada {
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -102,7 +102,7 @@ body {
 
 }
 
-.portada-imgs {
+.portada__imgs {
     height: 100vh;
     position: relative;
     background-image: url("img/bg-portada.jpg");
@@ -113,14 +113,14 @@ body {
     background-size: cover;
 }
 
-.portada-imgs img:first-child {
+.portada__imgs img:first-child {
     width: 250px;
     align-self: flex-start;
     padding: 20px;
     max-width: 50%;
 }
 
-.portada-imgs img:nth-child(2n) {
+.portada__imgs img:nth-child(2n) {
     /* width: 50%; */
     /* position: absolute; */
     /* top: 50%; */
@@ -129,33 +129,34 @@ body {
     width: 50%;
     margin: auto;
 }
-.pie-portada {
+.pie__portada {
     background-color: var(--pie-portada);
     color: var(--blanco);
     display: flex;
     padding: 20px;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.pie-portada ul {
+.pie__portada ul {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.pie-portada ul li {
+.pie__portada ul li {
     list-style: none;
 }
 
-.pie-portada p {
+.pie__portada p {
     flex-basis: 60%;
     padding: 0;
 }
 
-.contenedor-registro {
+.contenedor__registro {
     /* width: 50%; */
     flex: 1;
 }
-.login-html {
+.acceso__html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -163,19 +164,19 @@ body {
 	margin: auto;
 	max-width: 80%;
 }
-.login-html h2 {
+.acceso__html h2 {
     margin-bottom: 60px;
     align-self: flex-start;
     color: var(--campos);
     font-size: var(--titulo-login);
 }
 
-.login-html .group {
+.acceso__html .group {
     display: flex;
     flex-direction: column;
 }
 
-.login-html input {
+.acceso__html input {
 	height: 50px;
 	border: 1px solid var(--borde-seccion);
 	border-radius: 13px;
@@ -184,7 +185,7 @@ body {
 }
 
 
-.sign-in-htm .group:nth-child(3) input {
+.registro_html .group:nth-child(3) input {
     background-color: var(--azul-boton);
     color: var(--blanco);
     border-radius: 30px;
@@ -192,7 +193,7 @@ body {
     font-size: 1.3em;
 }
 
-.sign-in-htm .group:nth-child(5) input {
+.registro_html .group:nth-child(5) input {
 	background-color: var(--azul-boton);
 	color: var(--blanco);
 	border-radius: 30px;
@@ -208,7 +209,7 @@ hr {
     margin: 40px 0;
 }
 
-.login-form {
+.acceso__form {
     width: 100%;
 }
 
@@ -376,4 +377,12 @@ h5,
 h6,
 p {
     padding: 0.2em 0 0.6em;
+}
+
+@media only screen and (max-width: 800px) {
+    .pie__portada p {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
 }
