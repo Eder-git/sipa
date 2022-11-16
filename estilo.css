@@ -55,14 +55,16 @@
     --pie-portada: #004179;
     --campos: #181A1C;
 
+
+    
     --titulo: 1.875em;
     --subtitulo: 1.563em;
     --titulo-campo: 1.125em;
     --titulo-login: 1.875em;
-
     --fuente: 'Roboto', sans-serif;
-
     --borde-caja:1em;
+    --borde-alerta:#f70707;
+    --color-texto-alerta:#8f1212;
     }
 
 * {
@@ -171,12 +173,12 @@ body {
     font-size: var(--titulo-login);
 }
 
-.acceso__html .group {
+.acceso__html .grupo{
     display: flex;
     flex-direction: column;
 }
 
-.acceso__html input {
+.acceso__html .entrada {
 	height: 50px;
 	border: 1px solid var(--borde-seccion);
 	border-radius: 13px;
@@ -184,16 +186,7 @@ body {
 	padding: 0 30px;
 }
 
-
-.registro_html .group:nth-child(3) input {
-    background-color: var(--azul-boton);
-    color: var(--blanco);
-    border-radius: 30px;
-    border: none;
-    font-size: 1.3em;
-}
-
-.registro_html .group:nth-child(5) input {
+ .registro__html .grupo:nth-child(5) .bloque__btn {
 	background-color: var(--azul-boton);
 	color: var(--blanco);
 	border-radius: 30px;
@@ -201,7 +194,7 @@ body {
 	width: 300px;
 	margin: 13px auto;
 	max-width: 80%;
-}
+} 
 
 
 hr {
@@ -286,7 +279,7 @@ font-style: italic;}
 
 .caja__contenido {
     background-color: var(--blanco);
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 10px 10px;
     border: solid 1px var(--borde-seccion);
     padding: var(--borde-caja);
     color: var(--texto-color);
@@ -301,7 +294,7 @@ font-style: italic;}
 
 .tabla__listado td{
     border-bottom:solid 1px var(--gris-tit-seccion);
-    padding: 4px;
+    padding: 10px;
     text-align: center;
     width: 33%;}
 
@@ -313,10 +306,16 @@ font-style: italic;}
        border-radius: 20px;
        padding: 10px;
        width: 110px;
-     
      }
 
-
+.bloque__btn{
+    color: var(--blanco);
+    border: 0;
+    background: none;
+    background-color: var(--azul-boton);
+    border-radius: 30px;
+    padding: 10px;
+}
 
 
 .area__proyecto {
@@ -335,6 +334,16 @@ font-style: italic;}
     border-radius: 10px;
     display: inline-block;
     padding: 1em;
+}
+
+.alerta {
+	width: 90%;
+	border: 1px solid var(--borde-alerta);
+	background-color: #ffd2d2;
+	text-align: center;
+	border-radius: 10px;
+	margin: 30px auto;
+	color: var(--color-texto-alerta);
 }
 
 body {
@@ -376,7 +385,7 @@ h4,
 h5,
 h6,
 p {
-    padding: 0.2em 0 0.6em;
+    padding: 5px;
 }
 
 @media only screen and (max-width: 800px) {
