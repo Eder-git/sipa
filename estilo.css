@@ -226,7 +226,24 @@ color:green;
 font-style: italic;}
 /*fin clase*/
 
+.header{
+    background-color: var(--azul-tit);
+    height: 130px;
+    width: 100%;
+}
 
+.enc__general{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    background-color: var(--azul-tit);
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;}
+
+ .enc__logo img{
+    width: 200px;}
 
 .bloque {
     background-color: var(--gris-seccion);
@@ -328,12 +345,12 @@ font-style: italic;}
 
 }
 
-.textarea {
+/*.textarea {
     background-color: var(--blanco);
     border-radius: 10px;
     display: inline-block;
     padding: 1em;
-}
+}*/
 
 .alerta {
 	width: 90%;
@@ -386,6 +403,23 @@ h6,
 p {
     padding: 5px;
 }
+
+.pie{
+    margin-top: 1em;
+    background-color: var(--azul-texto);
+    width: 100%;
+}
+
+.pie__enlaces{}
+
+.pie__legales{
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--azul-texto);
+    color: var(--blanco);
+}
+
+
 
 @media only screen and (max-width: 800px) {
     .pie__portada p {
