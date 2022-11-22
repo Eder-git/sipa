@@ -187,6 +187,16 @@ body {
 	max-width: 80%;
 } 
 
+.btn{
+    color: var(--blanco);
+    border: 0;
+    background: none;
+    background-color: var(--azul-boton);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
 
 hr {
     border: 1px solid var(--gris-tit-seccion);
