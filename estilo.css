@@ -144,7 +144,7 @@ body {
     list-style: none;
 }
 
-.pie-portada__lista p {
+.pie-portada p {
     flex-basis: 60%;
     padding: 0;
 }
