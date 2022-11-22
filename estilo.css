@@ -405,18 +405,34 @@ p {
 }
 
 .pie{
-    margin-top: 1em;
+    margin-top: 2em;
     background-color: var(--azul-texto);
     width: 100%;
+    }
+
+.pie__contenido{
+    max-width: 1200px;
+    margin: auto;    
+    padding: 2em; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+
+.pie__creditos{ }
+
+.pie__creditos ul{
+    text-align: right;
 }
 
-.pie__enlaces{}
 
 .pie__legales{
-    max-width: 1200px;
-    margin: auto;
     background-color: var(--azul-texto);
     color: var(--blanco);
+    width: 60%;
+    border-left: solid 1px var(--blanco);
+    padding-left: 2em;
 }
 
 
