@@ -228,22 +228,22 @@ font-style: italic;}
 
 .header{
     background-color: var(--azul-tit);
-    height: 130px;
+    min-height: 130px;
     width: 100%;
 }
 
-.enc__general{
+.encabezado{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items:center;
     background-color: var(--azul-tit);
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;}
-
- .enc__logo img{
-    width: 200px;}
+    padding: 10px;
+     }
+    
+.encabezado__image{
+    width: 100px; 
+    }
 
 .bloque {
     background-color: var(--gris-seccion);
