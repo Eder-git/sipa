@@ -181,13 +181,13 @@ body {
 	padding: 0 30px;
 }
 
-  .registro__grupo:nth-child(5) .grupo__btn {
+  .registro__grupo:nth-child(5) .registro__btn {
 	width: 300px;
 	margin: 13px auto;
 	max-width: 80%;
 } 
 
-.grupo__btn{
+.registro__btn{
     color: var(--blanco);
     border: 0;
     background: none;
