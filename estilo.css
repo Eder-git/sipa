@@ -168,7 +168,7 @@ body {
     font-size: var(--titulo-login);
 }
 
-.grupo{
+.registro__grupo{
     display: flex;
     flex-direction: column;
 }
@@ -181,13 +181,13 @@ body {
 	padding: 0 30px;
 }
 
- .registro .grupo:nth-child(5) .btn {
+  .registro__grupo:nth-child(5) .grupo__btn {
 	width: 300px;
 	margin: 13px auto;
 	max-width: 80%;
 } 
 
-.btn{
+.grupo__btn{
     color: var(--blanco);
     border: 0;
     background: none;
