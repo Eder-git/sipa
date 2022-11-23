@@ -207,7 +207,7 @@ hr {
     width: 100%;
 }
 
-.contenedor__principal {
+.contenedor-principal {
 	max-width: 1200px;
 	margin: auto;
 }
@@ -220,7 +220,7 @@ hr {
 }
 
 /* clase muestra tipo componente*/
-.tipo__clase{ 
+.tipo-clase{ 
 margin-top: 1em;
 padding: 0;
 color:green;
@@ -240,10 +240,11 @@ font-style: italic;}
     align-items:center;
     background-color: var(--azul-tit);
     padding: 10px;
+    margin: auto;
      }
     
-.encabezado__image{
-    width: 100px; 
+.encabezado img{
+    width: 200px; 
     }
 
 .bloque {
@@ -259,13 +260,13 @@ font-style: italic;}
     font-size: var(--texto);
 }
 
-.bloque__2columnas {
+.bloque-dos-columnas{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.bloque__2columnas .caja{
+.bloque-dos-columnas .caja{
         width: 500px;
         padding: 15px;
 
@@ -301,15 +302,16 @@ font-style: italic;}
     padding: var(--borde-caja);
     color: var(--texto-color);
     font-family: var(--fuente);   }
-
-.tabla__listado{
+    
+.tabla-listado{
     width: 100%;}
 
-.tabla__listado th{
+
+.tabla-listado th{
     border-bottom:solid 1px var(--gris-tit-seccion);
 }
 
-.tabla__listado td{
+.tabla-listado td{
     border-bottom:solid 1px var(--gris-tit-seccion);
     padding: 10px;
     text-align: center;
@@ -335,7 +337,7 @@ font-style: italic;}
 }
 
 
-.area__proyecto {
+.area-proyecto{
     background-color: var(--blanco);
     border-radius: 10px;
     border: solid 1px var(--borde-seccion);
@@ -343,15 +345,7 @@ font-style: italic;}
     margin: 1em auto auto;
     color: var(--texto-color);
     font-family: var(--fuente);
-
 }
-
-/*.textarea {
-    background-color: var(--blanco);
-    border-radius: 10px;
-    display: inline-block;
-    padding: 1em;
-}*/
 
 .alerta {
 	width: 90%;
@@ -404,38 +398,6 @@ h6,
 p {
     padding: 5px;
 }
-
-.pie{
-    margin-top: 2em;
-    background-color: var(--azul-texto);
-    width: 100%;
-    }
-
-.pie__contenido{
-    max-width: 1200px;
-    margin: auto;    
-    padding: 2em; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items:flex-start;
-  }
-
-.pie__creditos{ }
-
-.pie__creditos ul{
-    text-align: right;
-}
-
-
-.pie__legales{
-    background-color: var(--azul-texto);
-    color: var(--blanco);
-    width: 60%;
-    border-left: solid 1px var(--blanco);
-    padding-left: 2em;
-}
-
 
 
 @media only screen and (max-width: 800px) {
