@@ -212,13 +212,6 @@ hr {
 	margin: auto;
 }
 
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: 0;
-}
-
 /* clase muestra tipo componente*/
 .tipo-clase{ 
 margin-top: 1em;
@@ -324,7 +317,7 @@ font-style: italic;}
        background-color: var(--azul-boton);
        border-radius: 20px;
        padding: 10px;
-       width: 11
+       width: 11;
      }
 
 .bloque__btn{
@@ -334,10 +327,10 @@ font-style: italic;}
     background-color: var(--azul-boton);
     border-radius: 30px;
     padding: 10px;
+    display: inline-block;
 }
 
-
-.area-proyecto{
+.info-proyecto{
     background-color: var(--blanco);
     border-radius: 10px;
     border: solid 1px var(--borde-seccion);
@@ -345,7 +338,40 @@ font-style: italic;}
     margin: 1em auto auto;
     color: var(--texto-color);
     font-family: var(--fuente);
+    border:solid 1px var(--borde-seccion);
+    display: flex;
+    }
+
+.info-proyecto__select{
+    padding: 4px;
 }
+
+.info-proyecto__titulo{
+    width: 100%;
+   }
+
+.info-proyecto__titulo h4{
+    width: 100%;
+    border-bottom:solid 1px var(--borde-seccion);
+  }
+
+.info-proyecto__textobtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    }
+
+.info-proyecto__iconotexto{
+   
+}
+
+.info-proyecto__btn{
+ 
+}
+
+
+
 
 .alerta {
 	width: 90%;
