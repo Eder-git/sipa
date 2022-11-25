@@ -274,7 +274,7 @@ font-style: italic;}
 
 .area__texto{
     border-radius: 10px;
-    width: 95%;
+    width: 100%;
     border: solid 1px var(--borde-seccion);
 
 }
@@ -324,7 +324,7 @@ font-style: italic;}
        background-color: var(--azul-boton);
        border-radius: 20px;
        padding: 10px;
-       width: 110px;
+       width: 11
      }
 
 .bloque__btn{
