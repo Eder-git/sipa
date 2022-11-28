@@ -149,15 +149,6 @@ body {
     padding: 0;
 }
 
-.pie-fondoMural{
-    background-image: url(img/pie-fondoMural.jpg);
-    background-size: cover;
-    margin: auto;
-    width: 1200px;
-    min-height: 40px;
- }
-
-
 .contenedor-registro {
     /* width: 50%; */
     flex: 1;
@@ -231,7 +222,7 @@ font-style: italic;}
 
 header{
     background-color: var(--azul-tit);
-    min-height: 130px;
+    min-height: 100px;
     width: 100%;
 }
 
@@ -249,6 +240,28 @@ header{
 .encabezado img{
     width: 200px; 
     }
+
+ .menu {
+        background-color: var(--azul-texto);
+        margin: auto;
+    }
+
+.menu ul{
+        background-color: var(--azul-texto);
+        color:var(--blanco);
+        padding: 10px 20px 10px 0px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+.menu li{
+    display: inline;
+    background-color: var(--azul-texto);
+    color:var(--blanco);
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: solid 1px var(--blanco);
+   }
 
 .bloque {
     background-color: var(--gris-seccion);
@@ -363,7 +376,7 @@ header{
     width: 100%;
    }
 
-.info-proyecto__titulo h4{
+.listado-proyecto__titulo h4{
     width: 100%;
     border-bottom:solid 1px var(--borde-seccion);
   }
@@ -448,6 +461,66 @@ h6,
 p {
     padding: 5px;
 }
+
+
+.tit-admon{
+    color: var(--texto);
+    font-size: var(--titulo);
+}
+
+.texto-resaltado{
+    color: #00589c;
+}
+
+.texto-negritas{
+    font-weight: bold;
+}
+
+
+.listado-unidad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    border-bottom: solid 1px var(--gris-texto);
+    padding-bottom: 10px;
+}
+
+
+.pie-contenido {
+    background-color: var(--pie-portada);
+    color: var(--blanco);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    
+}
+.pie-contenido__lista{
+   margin-bottom: 1em;
+ 
+}
+.pie-contenido__lista  li {
+     list-style: none;
+     display: inline;
+     padding-right: 2em;
+     padding-bottom: 1em;
+}
+
+.pie-contenido p {
+    flex-basis: 60%;
+    padding: 20px;
+    border-left: solid 1px var(--blanco);
+}
+
+.pie-contenido__fondoMural{
+    background-image: url(img/pie-fondoMural.jpg);
+    background-size: cover;
+    margin: auto;
+    min-height: 80px;
+ }
+
 
 
 @media only screen and (max-width: 800px) {
