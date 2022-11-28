@@ -263,12 +263,12 @@ header{
     font-size: var(--texto);
 }
 
-.bloque-dos-columnas{
+.bloque-dos-columnas {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 }
-
 .bloque-dos-columnas .caja{
         width: 500px;
         padding: 15px;
@@ -415,6 +415,28 @@ h4 {
     font-weight: 700;
     color: var(--texto-color);
     color: var(--campos);
+}
+
+/* PERFIL */
+
+.bloque__perfil .btn__bloque {
+	margin: 0 auto;
+	display: block;
+	/* width: auto; */
+}
+
+.bloque-info-perfil img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.bloque-info-perfil {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 12px 17px gray;
 }
 
 h1,
