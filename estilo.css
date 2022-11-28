@@ -149,6 +149,15 @@ body {
     padding: 0;
 }
 
+.pie-fondoMural{
+    background-image: url(img/pie-fondoMural.jpg);
+    background-size: cover;
+    margin: auto;
+    width: 1200px;
+    min-height: 40px;
+ }
+
+
 .contenedor-registro {
     /* width: 50%; */
     flex: 1;
@@ -220,7 +229,7 @@ color:green;
 font-style: italic;}
 /*fin clase*/
 
-.header{
+header{
     background-color: var(--azul-tit);
     min-height: 130px;
     width: 100%;
@@ -234,6 +243,7 @@ font-style: italic;}
     background-color: var(--azul-tit);
     padding: 10px;
     margin: auto;
+    width: 1200px;
      }
     
 .encabezado img{
@@ -320,17 +330,20 @@ font-style: italic;}
        width: 110px;
      }
 
-.bloque__btn{
-    color: var(--blanco);
-    border: 0;
-    background: none;
-    background-color: var(--azul-boton);
-    border-radius: 30px;
-    padding: 10px;
-    display: inline-block;
-}
+.btn__bloque{
+        color: var(--blanco);
+        border: 0;
+        background: none;
+        background-color: var(--azul-boton);
+        border-radius: 30px;
+        padding: 10px;
+        display: inline-block;
+        align-self: flex-end;
+      
+    }
+    
 
-.info-proyecto{
+.listado-proyecto{
     background-color: var(--blanco);
     border-radius: 10px;
     border: solid 1px var(--borde-seccion);
@@ -342,11 +355,11 @@ font-style: italic;}
     display: flex;
     }
 
-.info-proyecto__select{
+.listado-proyecto__select{
     padding: 4px;
 }
 
-.info-proyecto__titulo{
+.listado-proyecto__titulo{
     width: 100%;
    }
 
@@ -355,23 +368,12 @@ font-style: italic;}
     border-bottom:solid 1px var(--borde-seccion);
   }
 
-.info-proyecto__textobtn{
+.listado-proyecto__textobtn{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px;
     }
-
-.info-proyecto__iconotexto{
-   
-}
-
-.info-proyecto__btn{
- 
-}
-
-
-
 
 .alerta {
 	width: 90%;
