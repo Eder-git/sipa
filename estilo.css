@@ -234,7 +234,7 @@ header{
     background-color: var(--azul-tit);
     padding: 10px;
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
      }
     
 .encabezado img{
@@ -347,6 +347,7 @@ header{
         padding: 10px;
         width: 110px;
         margin: 5px 10px;
+        cursor: pointer;
     }
 
 .btn__bloque{
@@ -356,10 +357,10 @@ header{
         background-color: var(--azul-boton);
         border-radius: 30px;
         padding: 10px;
-        display: inline-block;
-        align-self: flex-end;
         cursor: pointer;
-      
+        display: block;
+        margin-left: auto;
+        margin-top: 20px;
     }
     
 
@@ -394,6 +395,7 @@ header{
 	justify-content: space-between;
     align-items: center;
 	padding: 5px;
+    cursor: pointer;
 	
 }
 
@@ -523,10 +525,7 @@ p {
     margin-top: 3em;
     
 }
-.pie-contenido__lista{
-   margin-bottom: 1em;
- 
-}
+
 .pie-contenido__lista  li {
      list-style: none;
      display: inline;
