@@ -292,6 +292,7 @@ header{
     border-radius: 10px;
     width: 100%;
     border: solid 1px var(--borde-seccion);
+    padding: 15px;
 
 }
 
@@ -443,8 +444,9 @@ h4 {
 
 /* PERFIL */
 
-.bloque__perfil .caja__contenido{
-    height: 100%;
+.bloque__perfil .caja__contenido {
+	height: 100%;
+	border-radius: 10px;
 }
 
 .bloque-usuario .caja__contenido p {
@@ -454,7 +456,7 @@ h4 {
 
 .bloque__perfil .btn__bloque {
 	display: block;
-	margin-top: auto;
+	margin: auto 0 0 0;
 	align-self: center;
 	width: 150px;
 }
@@ -473,7 +475,6 @@ h4 {
 	box-shadow: inset 0px 50px 0px 0px var(--gris-tit-seccion), 
     0px -107px 0px 25px var(--gris-tit-seccion);
 }
-
 
 .bloque__perfil p {
 	margin-bottom: 21px;
