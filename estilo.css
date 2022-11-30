@@ -288,14 +288,12 @@ header{
 	padding: 15px;
 	align-self: stretch;
 }
-.area__texto{
+
+.bloque__area-texto{
     border-radius: 10px;
     width: 100%;
     border: solid 1px var(--borde-seccion);
-    padding: 15px;
-
-}
-
+    padding: 15px;}
 
 .caja{
     width: 100%;
@@ -339,31 +337,38 @@ header{
     text-align: center;
     width: 33%;}
 
-    .btn-icono {
-        color: var(--blanco);
-        border: 0;
-        background: none;
-        background-color: var(--azul-boton);
-        border-radius: 20px;
-        padding: 10px;
-        width: 110px;
-        margin: 5px 10px;
-        cursor: pointer;
+
+.btn,
+.btn-icono, .btn-bloque{
+    color: var(--blanco);
+    border: 0;
+    background: none;
+    background-color: var(--azul-boton);
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+    margin: 5px 10px;
+    cursor: pointer;
+    display:inline-block;
+}
+
+.btn-icono {
+        
     }
 
-.btn__bloque{
-        color: var(--blanco);
-        border: 0;
-        background: none;
-        background-color: var(--azul-boton);
-        border-radius: 30px;
-        padding: 10px;
-        cursor: pointer;
-        display: block;
-        margin-left: auto;
+.btn-bloque{
         margin-top: 20px;
     }
     
+
+.bloque__btn{
+    text-align: right;
+}
+
+.bloque__btn-perfil{
+    text-align: center;
+    margin-top: auto;
+}
 
 .listado-proyecto{
     background-color: var(--blanco);
