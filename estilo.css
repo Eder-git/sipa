@@ -134,6 +134,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%;
 }
 .pie-portada__lista {
     display: flex;
@@ -343,13 +344,16 @@ header{
     color: var(--blanco);
     border: 0;
     background: none;
+    background-color: rgba(0, 0, 0, 0);
     background-color: var(--azul-boton);
     border-radius: 20px;
     padding: 10px;
-    width: 120px;
+    width: auto;
     margin: 5px 10px;
     cursor: pointer;
-    display:inline-block;
+    display: inline-block;
+    text-decoration: none;
+    min-width: 120px;
 }
 
 .btn-icono {
